@@ -6,7 +6,7 @@
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 17:01:05 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/12 18:29:32 by novsiann         ###   ########.fr       */
+/*   Updated: 2022/12/13 16:37:45 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_isalpha(int c)
 
 // int main()
 // {
-// 	int c = 122;
+// 	int c = 100;
 // 	int result = ft_isalpha(c);
 // 	printf("%d",result);
 // }

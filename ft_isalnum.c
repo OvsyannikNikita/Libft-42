@@ -6,7 +6,7 @@
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:35:57 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/12 18:40:58 by novsiann         ###   ########.fr       */
+/*   Updated: 2022/12/13 16:38:54 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_isalnum(int c)
 
 // int main()
 // {
-// 	int c = 122;
+// 	int c = 120;
 // 	int result = ft_isalnum(c);
 // 	printf("%d",result);
 // }
