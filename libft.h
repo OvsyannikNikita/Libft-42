@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/13 16:17:27 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/14 18:15:57 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/14 18:12:27 by novsiann          #+#    #+#             */
+/*   Updated: 2022/12/14 20:54:09 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#ifndef LIBFT_H
+# define LIBFT_H
+//Library
+# include <stdio.h>
+# include <unistd.h>
+# include <string.h>
+//Functions
+int		ft_toupper(int c);
+int		ft_tolower(int c);
+int		ft_isprint(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isalpha(int c);
 
-int	ft_isascii(int c)
-{
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
-}
+size_t	ft_strlen(const char *s);
 
-// int main()
-// {
-// 	int c = 10;
-// 	int result = ft_isascii(c);
-// 	printf("%d",result);
-// }
+char	*ft_strchr(const char *s, int c);
+#endif
