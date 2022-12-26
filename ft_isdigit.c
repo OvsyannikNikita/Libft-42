@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/12 17:41:26 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/13 16:40:23 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/17 14:38:14 by nikitos           #+#    #+#             */
+/*   Updated: 2022/12/19 16:32:52 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -22,7 +21,7 @@ int	ft_isdigit(int c)
 
 // int main()
 // {
-// 	int c = 56;
+// 	int c = 58;
 // 	int result = ft_isdigit(c);
 // 	printf("%d",result);
 // }

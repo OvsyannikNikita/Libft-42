@@ -5,34 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/14 22:33:10 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/14 23:51:04 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/17 14:48:20 by nikitos           #+#    #+#             */
+/*   Updated: 2022/12/22 23:01:01 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*chr;
-	size_t	i;
-	size_t	j;
-	size_t	k;
+	int		len;
 
-	chr = (char *)s;
-	i = ft_strlen(chr);
-	j = i - 1;
-	while (j >= 0)
+	len = ft_strlen(s);
+	while (len >= 0)
 	{
-		if (chr[j] == c)
-		{
-			k = j;
-			while (k < i)
-			{
-				return (&chr[k]);
-			}
-		}
-		j--;
+		if (s[len] == (char)c)
+			return ((char *)s + len);
+		len--;
 	}
 	return (NULL);
 }
@@ -40,9 +30,9 @@ char	*ft_strrchr(const char *s, int c)
 // int main()
 // {
 // 	const char str[] = "http://www.tutorialspoint.com/";
-// 	int c = 46;
+// 	int c = '\0';
 // 	char *ret;
-// 	printf("%c\n",c);
+// 	printf("%c\n",'\0');
 // 	ret = ft_strrchr(str,c);
 // 	printf("String after |%c| is - |%s|\n", c, ret);
 // 	return (0);

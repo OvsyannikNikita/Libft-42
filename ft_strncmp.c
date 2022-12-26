@@ -1,32 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/17 14:44:23 by nikitos           #+#    #+#             */
-/*   Updated: 2022/12/19 16:32:30 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/17 14:46:20 by nikitos           #+#    #+#             */
+/*   Updated: 2022/12/23 09:21:45 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (s[i] != '\0')
-	{
+	if (n == 0)
+		return (0);
+	while (s1[i] && s2[i] && i < n - 1 && s2[i] == s1[i])
 		i++;
-	}
-	return (i);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
 // int main()
 // {
-// 	char s[] = "Hello!";
-// 	int result = ft_strlen(s);
-// 	printf("%d",result);
+// 	char *str1 = "hello1aa";
+// 	char *str2 = "hello1aZ";
+// 	size_t n = 9;
+// 	int result;
+
+// 	result = ft_strncmp(str1,str2, n);
+// 	printf("My: %d\n", result);
+// 	printf("Original: %d\n",strncmp(str1,str2,n));
+// 	return (0);
 // }

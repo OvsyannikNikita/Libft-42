@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/13 16:17:27 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/14 18:15:57 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/17 14:37:18 by nikitos           #+#    #+#             */
+/*   Updated: 2022/12/19 16:32:55 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

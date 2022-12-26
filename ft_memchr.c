@@ -1,41 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/17 14:40:43 by nikitos           #+#    #+#             */
-/*   Updated: 2022/12/23 12:19:13 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/22 18:59:05 by novsiann          #+#    #+#             */
+/*   Updated: 2022/12/23 12:11:56 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int	i;
+	unsigned char	*str;
+	unsigned char	find;
+	size_t			i;
 
 	i = 0;
-	while (s[i])
+	find = c;
+	str = (unsigned char *)s;
+	while (i < n)
 	{
-		if (s[i] == (char)c)
-			return ((char *)(s + i));
+		if (str[i] == find)
+		{
+			return (&str[i]);
+		}
 		i++;
 	}
-	if (s[i] == (char)c)
-		return ((char *)(s + i));
 	return (NULL);
 }
 
-// int main () {
+// int main()
+// {
 //    const char str[] = "http://www.tutorialspoint.com/";
 //    int c = 46;
 //    char *ret;
 
-//    ret = ft_strchr(str, c);
+//    ret = ft_memchr(str, c, 40);
 
 //    printf("String after |%c| is - |%s|\n", c, ret);
 
-//    return(0);
+//    return(0);	
 // }

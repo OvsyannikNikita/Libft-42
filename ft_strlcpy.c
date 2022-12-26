@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/13 18:27:05 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/14 23:11:35 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/17 14:43:02 by nikitos           #+#    #+#             */
+/*   Updated: 2022/12/19 20:38:27 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	j;
@@ -38,7 +38,7 @@ size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 //     char dst2[15] = "HelloWorld!";
 
 //     const char src[11] = "teststring";
-//     int size = 0;
+//     int size = 10;
 //     printf("mine : %zu\n", ft_strlcpy(dst, src, size));
 //     printf("%s\n", dst);
 //     printf("string.h : %zu\n", strlcpy(dst2, src, size));

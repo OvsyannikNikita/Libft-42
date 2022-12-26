@@ -1,41 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/17 14:40:43 by nikitos           #+#    #+#             */
-/*   Updated: 2022/12/23 12:19:13 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/20 17:01:59 by novsiann          #+#    #+#             */
+/*   Updated: 2022/12/23 11:36:29 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	int	i;
+	size_t	i;
+	char	*d;
+	char	*s;
 
+	d = (char *)dst;
+	s = (char *)src;
 	i = 0;
-	while (s[i])
+	if (d == s || !n)
+		return (dst);
+	while (i < n)
 	{
-		if (s[i] == (char)c)
-			return ((char *)(s + i));
+		d[i] = s[i];
 		i++;
 	}
-	if (s[i] == (char)c)
-		return ((char *)(s + i));
-	return (NULL);
+	return (dst);
 }
 
 // int main () {
-//    const char str[] = "http://www.tutorialspoint.com/";
-//    int c = 46;
-//    char *ret;
-
-//    ret = ft_strchr(str, c);
-
-//    printf("String after |%c| is - |%s|\n", c, ret);
-
-//    return(0);
-// }
+//    char a[] = "Firststring";
+//    const char b[] = "Secondstring";
+//    ft_memcpy(a, b, 0);
+//    printf("New arrays : %s\n%s", a, b);
+//    return 0;
+// } 

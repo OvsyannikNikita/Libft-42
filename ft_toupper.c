@@ -5,17 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/13 17:51:54 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/13 18:11:38 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/17 14:51:19 by nikitos           #+#    #+#             */
+/*   Updated: 2022/12/22 22:56:55 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
-	if (c >= 97 && c <= 127)
+	if (c >= 97 && c <= 122)
 	{
 		c -= 32;
 	}

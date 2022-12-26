@@ -1,41 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/17 14:40:43 by nikitos           #+#    #+#             */
-/*   Updated: 2022/12/23 12:19:13 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/20 14:05:41 by novsiann          #+#    #+#             */
+/*   Updated: 2022/12/23 11:18:37 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	int	i;
+	unsigned char	*byte;
 
-	i = 0;
-	while (s[i])
+	byte = b;
+	while (len--)
 	{
-		if (s[i] == (char)c)
-			return ((char *)(s + i));
-		i++;
+		*byte = c;
+		byte++;
 	}
-	if (s[i] == (char)c)
-		return ((char *)(s + i));
-	return (NULL);
+	return (b);
 }
 
-// int main () {
-//    const char str[] = "http://www.tutorialspoint.com/";
-//    int c = 46;
-//    char *ret;
-
-//    ret = ft_strchr(str, c);
-
-//    printf("String after |%c| is - |%s|\n", c, ret);
-
-//    return(0);
+// int main()
+// {
+// 	char str1[10] = "hello";
+// 	char str2[10] = "hello";
+// 	printf("%s\n", str1);
+// 	printf("%s\n", str2);
+// 	ft_memset(str1,'a',4);
+// 	memset(str2,'a',4);
+// 	printf("%s\n", str1);
+// 	printf("%s\n", str2);
+// 	return(0);
 // }

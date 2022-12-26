@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/13 18:12:26 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/13 18:17:04 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/17 14:50:35 by nikitos           #+#    #+#             */
+/*   Updated: 2022/12/19 16:32:19 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

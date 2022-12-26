@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/12 17:01:05 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/13 16:37:45 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/17 14:35:54 by nikitos           #+#    #+#             */
+/*   Updated: 2022/12/19 16:32:59 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
@@ -22,7 +21,7 @@ int	ft_isalpha(int c)
 
 // int main()
 // {
-// 	int c = 100;
+// 	int c = 1;
 // 	int result = ft_isalpha(c);
 // 	printf("%d",result);
 // }

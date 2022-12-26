@@ -1,41 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/17 14:40:43 by nikitos           #+#    #+#             */
-/*   Updated: 2022/12/23 12:19:13 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/19 21:54:46 by novsiann          #+#    #+#             */
+/*   Updated: 2022/12/23 11:49:24 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	ft_bzero(void *s, size_t n)
 {
-	int	i;
+	char	*b;
 
-	i = 0;
-	while (s[i])
+	b = s;
+	while (n--)
 	{
-		if (s[i] == (char)c)
-			return ((char *)(s + i));
-		i++;
+		*b = 0;
+		b++;
 	}
-	if (s[i] == (char)c)
-		return ((char *)(s + i));
-	return (NULL);
 }
 
-// int main () {
-//    const char str[] = "http://www.tutorialspoint.com/";
-//    int c = 46;
-//    char *ret;
+// int main()
+// {
+// 	char s1[] = "Hello";
+// 	char s2[] = "Hello";
 
-//    ret = ft_strchr(str, c);
-
-//    printf("String after |%c| is - |%s|\n", c, ret);
-
-//    return(0);
+// 	printf("%s\n", s1);
+// 	printf("%s\n", s2);
+// 	ft_bzero(s1,6);
+// 	bzero(s2,6);
+// 	printf("%s\n", s1);
+// 	printf("%s\n", s2);
 // }

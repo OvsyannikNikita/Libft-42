@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/13 16:30:09 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/13 17:13:59 by novsiann         ###   ########.fr       */
+/*   Created: 2022/12/17 14:39:32 by nikitos           #+#    #+#             */
+/*   Updated: 2022/12/19 16:32:48 by novsiann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -22,7 +21,7 @@ int	ft_isprint(int c)
 
 // int main()
 // {
-// 	int c = 125;
+// 	int c = 128;
 // 	int result = ft_isprint(c);
 // 	printf("%d",result);
 // }
