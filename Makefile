@@ -1,5 +1,5 @@
 NAME	=	libft.a
-# Name des kompilierten Programms
+# Имена скомпилированных программ
 SRCS	=	ft_memset.c  \
   ft_bzero.c  \
   ft_memcpy.c  \
@@ -22,18 +22,20 @@ SRCS	=	ft_memset.c  \
   ft_strnstr.c \
   ft_strrchr.c \
   ft_memcmp.c \
+  ft_calloc.c \
+  ft_strdup.c \
 #SRCS_BONUS = ft_lstadd_front.c ft_lstnew.c ft_lstsize.c
 OBJS	=	${SRCS:.c=.o}
 #OBJS_BONUS = $(SRCS_BONUS:.c=.o)
-# Damit nur veränderte .c-Dateien in .o-Dateien kompiliert werden
+# Чтобы только измененные файлы .c компилировались в файлы .o
 RM		=	rm -f
-# -f (force) macht fclean jederzeit ausführbar (auch ohne .o-Dateien)
+# -f (force) делает fclean исполняемым в любое время (даже без файлов .o)
 CC		=	cc
-# Kompiliersprache
+# Компилятор
 CFLAGS	=	-Wall -Wextra -Werror
 
 all:		${NAME}
-# Die verwendeten Flags
+# Используемые флаги
 ${NAME}:	${OBJS}
 			ar rcs $(NAME) $(OBJS)
 
@@ -41,11 +43,11 @@ ${NAME}:	${OBJS}
 #ar rcs ${NAME} ${OBJS_BONUS}
 clean:
 			${RM} ${OBJS}
-# Löscht die .o-Dateien
+# Удаляет все файлы с .o
 fclean:		clean
 			${RM} ${NAME}
-# Löscht die .o- und exe-Dateien
+# Удаляет libft.a
 re:			fclean all
-# Löscht und rekompiliert
+# Удалить и перекомпилировать
 .PHONY:		all clean fclean re
-# Führt die Befehle aus, auch wenn eine gleichnamige Datei existiert
+# Запускаем команды, даже если файл с таким именем уже существует
