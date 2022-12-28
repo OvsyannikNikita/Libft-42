@@ -24,6 +24,7 @@ SRCS	=	ft_memset.c  \
   ft_memcmp.c \
   ft_calloc.c \
   ft_strdup.c \
+  ft_substr.c \
 #SRCS_BONUS = ft_lstadd_front.c ft_lstnew.c ft_lstsize.c
 OBJS	=	${SRCS:.c=.o}
 #OBJS_BONUS = $(SRCS_BONUS:.c=.o)
