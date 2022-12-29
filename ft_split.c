@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: novsiann <novsiann@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nikitos <nikitos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 15:21:10 by nikitos           #+#    #+#             */
-/*   Updated: 2022/12/29 20:26:13 by novsiann         ###   ########.fr       */
+/*   Updated: 2022/12/29 20:47:02 by nikitos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ char	**words(char **ptr_str, const char *s, char delim, int word_count)
 	length = 0;
 	while (s[i] && word < word_count)
 	{
-		while(s[i] && s[i] == delim)
+		while (s[i] && s[i] == delim)
 			i++;
-		while(s[i] && s[i] != delim)
+		while (s[i] && s[i] != delim)
 		{
 			i++;
 			length++;
@@ -38,12 +38,11 @@ char	**words(char **ptr_str, const char *s, char delim, int word_count)
 	return (ptr_str);
 }
 
-
 int	count_words(const char *str, char delim)
 {
 	int	i;
-	int counter;
-	
+	int	counter;
+
 	i = 0;
 	counter = 0;
 	while (str[i])
@@ -60,14 +59,14 @@ int	count_words(const char *str, char delim)
 			counter++;
 		}
 	}
-	return (counter); 
+	return (counter);
 }
 
 char	**ft_split(char const *s, char c)
 {
 	char	**ptr;
 	int		i;
-	
+
 	i = count_words(s, c);
 	ptr = malloc((sizeof (char *) * (i + 1)));
 	if (!ptr)
