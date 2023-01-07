@@ -6,7 +6,7 @@
 /*   By: nikitos <nikitos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 16:21:54 by novsiann          #+#    #+#             */
-/*   Updated: 2022/12/30 13:45:42 by nikitos          ###   ########.fr       */
+/*   Updated: 2023/01/07 12:19:59 by nikitos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*s2;
 
 	i = 0;
+	if (!s1)
+		return (NULL);
 	while (s1[i] && is_set(s1[i], set))
 		i++;
 	if (!(*(s1 + i)))
