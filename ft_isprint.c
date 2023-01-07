@@ -6,7 +6,7 @@
 /*   By: nikitos <nikitos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 14:39:32 by nikitos           #+#    #+#             */
-/*   Updated: 2022/12/31 16:51:49 by nikitos          ###   ########.fr       */
+/*   Updated: 2023/01/07 23:17:04 by nikitos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-
-// int main()
-// {
-// 	int c = 128;
-// 	int result = ft_isprint(c);
-// 	printf("%d",result);
-// }
