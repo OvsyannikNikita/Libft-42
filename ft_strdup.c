@@ -6,7 +6,7 @@
 /*   By: nikitos <nikitos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 20:23:57 by nikitos           #+#    #+#             */
-/*   Updated: 2022/12/31 17:05:25 by nikitos          ###   ########.fr       */
+/*   Updated: 2023/01/07 11:41:36 by nikitos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *src)
 	int		i;
 	int		size;
 
-	size = strlen(src);
+	size = ft_strlen(src);
 	new = malloc (sizeof(char) * (size + 1));
 	if (!new)
 		return (NULL);
