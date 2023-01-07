@@ -6,7 +6,7 @@
 /*   By: nikitos <nikitos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 15:21:10 by nikitos           #+#    #+#             */
-/*   Updated: 2022/12/31 16:53:10 by nikitos          ###   ########.fr       */
+/*   Updated: 2023/01/07 12:14:56 by nikitos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,8 @@ char	**ft_split(char const *s, char c)
 	char	**ptr;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	i = count_words(s, c);
 	ptr = malloc((sizeof (char *) * (i + 1)));
 	if (!ptr)
