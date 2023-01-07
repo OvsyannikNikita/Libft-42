@@ -6,7 +6,7 @@
 /*   By: nikitos <nikitos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 14:38:14 by nikitos           #+#    #+#             */
-/*   Updated: 2022/12/31 16:51:46 by nikitos          ###   ########.fr       */
+/*   Updated: 2023/01/07 23:16:59 by nikitos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-
-// int main()
-// {
-// 	int c = 58;
-// 	int result = ft_isdigit(c);
-// 	printf("%d",result);
-// }
