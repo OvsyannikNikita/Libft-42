@@ -60,10 +60,10 @@ all:		${NAME}
 ${NAME}:	${OBJS}
 			ar rcs $(NAME) $(OBJS)
 
-bonus: 		$(OBJS_BONUS)
-			ar rcs ${NAME} ${OBJS_BONUS}
+bonus: 		$(OBJS) $(OBJS_BONUS)
+			ar rcs ${NAME} $(OBJS) ${OBJS_BONUS}
 clean:
-			${RM} ${OBJS}
+			${RM} ${OBJS} ${OBJS_BONUS}
 # Удаляет все файлы с .o
 fclean:		clean
 			${RM} ${NAME}
